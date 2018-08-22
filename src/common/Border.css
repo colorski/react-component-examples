@@ -1,0 +1,28 @@
+.App-border {
+display: flex;
+}
+
+.App-border > p {
+flex: 1;
+height: 1px;
+}
+
+.App-border > p:nth-child(1) {
+background-color: #dd19db;
+}
+
+.App-border > p:nth-child(2) {
+background-color: #94b319;
+}
+
+.App-border > p:nth-child(3) {
+background-color: #ff3f85;
+}
+
+.App-border > p:nth-child(4) {
+background-color: #05ccfa;
+}
+
+.App-border > p:nth-child(5) {
+background-color: #ffa900;
+}
