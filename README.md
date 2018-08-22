@@ -1,3 +1,6 @@
-## React components in use
+This project was bootstrapped with Create-react-app.
 
+## Components
+
+TodoList
 
