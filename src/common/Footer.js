@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <div className="App-footer">
         <p>ColorSki</p>
-        <a href="https://github.com/colorski" target="_blank">github.com/colorski</a>
+        <a href="https://github.com/colorski" target="_blank" rel="nofollow me noopener noreferrer">github.com/colorski</a>
       </div>
     )
   }
