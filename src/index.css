@@ -34,6 +34,10 @@ footer, header, hgroup, main, menu, nav, section {
 }
 body {
 	line-height: 1;
+	
+	display: flex; 
+	flex-flow: column; 
+	min-height: 100vh;
 }
 ol, ul {
 	list-style: none;
@@ -52,4 +56,9 @@ table {
 }
 
 /* Common style for this project */
-
+/*紧贴底部的页脚问题，因为index.js里ReactDOM.render()即渲染在了div#root上，所以...*/
+#root {
+	display: flex; 
+	flex-flow: column; 
+	min-height: 100vh;
+}

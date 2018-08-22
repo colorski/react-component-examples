@@ -26,3 +26,23 @@ background-color: #05ccfa;
 .App-border > p:nth-child(5) {
 background-color: #ffa900;
 }
+
+.App-border > p:nth-child(6) {
+background-color: #dd19db;
+}
+
+.App-border > p:nth-child(7) {
+background-color: #94b319;
+}
+
+.App-border > p:nth-child(8) {
+background-color: #ff3f85;
+}
+
+.App-border > p:nth-child(9) {
+background-color: #05ccfa;
+}
+
+.App-border > p:nth-child(10) {
+background-color: #ffa900;
+}

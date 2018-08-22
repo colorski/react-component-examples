@@ -1,0 +1,17 @@
+.App-footer {
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 1.5rem;
+  font-size: 12px;
+}
+
+.App-footer p,
+.App-footer a {
+  flex: 1;
+}
+
+.App-footer a {
+  text-align: right;
+  color: #333;
+}
