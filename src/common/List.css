@@ -3,6 +3,12 @@
   flex: 1;
 }
 
+.list-wrapper .no-tips {
+  flex: 1;
+  margin: 10rem 0;
+  text-align: center;
+}
+
 @media screen and (max-width: 1024px) {
   .list-wrapper {
     display: block;
@@ -34,4 +40,5 @@
 
 .list-wrapper > ul > li > p {
   line-height: 1.8;
+  color: #666;
 }

@@ -1,43 +1,44 @@
-{
-    "status": 1,
-    "msg": "OK",
-    "data": [
-      {
-        "id": 10001,
-        "type": 1,
-        "title": "TodoList",
-        "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
-        "url": "/TodoList",
-      },
-      {
-        "type": 10002,
-        "title": "TodoList",
-        "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
-        "url": "/TodoList",
-      },
-      {
-        "type": 10003,
-        "title": "TodoList",
-        "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
-        "url": "/TodoList",
-      },
-      {
-        "type": 10004,
-        "title": "TodoList",
-        "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
-        "url": "/TodoList",
-      },
-      {
-        "type": 10005,
-        "title": "TodoList",
-        "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
-        "url": "/TodoList",
-      },
-      {
-        "type": 10006,
-        "title": "TodoList",
-        "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
-        "url": "/TodoList",
-      }
-    ]
-}
+[
+  {
+    "id": 10001,
+    "type": 1,
+    "title": "TodoList功能考察",
+    "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
+    "url": "/TodoList"
+  },
+  {
+    "id": 10002,
+    "type": 2,
+    "title": "TodoList",
+    "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
+    "url": "/TodoList"
+  },
+  {
+    "id": 10003,
+    "type": 3,
+    "title": "TodoList",
+    "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
+    "url": "/TodoList"
+  },
+  {
+    "id": 10004,
+    "type": 1,
+    "title": "TodoList",
+    "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
+    "url": "/TodoList"
+  },
+  {
+    "id": 10005,
+    "type": 2,
+    "title": "TodoList",
+    "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
+    "url": "/TodoList"
+  },
+  {
+    "id": 10006,
+    "type": 3,
+    "title": "TodoList",
+    "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
+    "url": "/TodoList"
+  }
+]
