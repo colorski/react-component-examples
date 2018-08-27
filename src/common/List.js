@@ -23,6 +23,9 @@ export default class List extends Component {
   initListData () {
     const { list } = this.state;
     if(list.length){
+
+      
+
       return (
         list.map((item) => (
           <li key={item.id}>
