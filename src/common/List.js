@@ -17,10 +17,9 @@ export default class List extends Component {
 
   componentDidMount () {
     axios.get('/data/list')
-      .then((res) => 
+      .then((res) =>
         {
           const data = {...res.data};
-          console.log(data)
           this.setState({
             listData: data
           })

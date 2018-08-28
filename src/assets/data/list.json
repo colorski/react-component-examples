@@ -4,29 +4,22 @@
       "id": 10001,
       "type": 1,
       "title": "HelloReact",
-      "desc": "the simplest practice for action of todolist",
+      "desc": "React components implement a render() method that takes input data and returns what to display. Input data that is passed into the component can be accessed by render() via this.props.",
       "url": "/sayhello"
     },
     {
-      "id": 10010,
+      "id": 10002,
+      "type": 1,
+      "title": "TimerSecond",
+      "desc": "the simplest practice for action of todolist",
+      "url": "/timersecond"
+    },
+    {
+      "id": 10003,
       "type": 1,
       "title": "TodoList",
       "desc": "the simplest practice for action of todolist",
       "url": "/todoList"
-    },
-    {
-      "id": 10002,
-      "type": 2,
-      "title": "TodoList11",
-      "desc": "the simplest practice for action of todolist",
-      "url": "/todoList11"
-    },
-    {
-      "id": 10003,
-      "type": 3,
-      "title": "TodoList",
-      "desc": "the simplest practice for action of todolist",
-      "url": "/todoList111"
     }
   ],
   "production": [
@@ -52,27 +45,5 @@
       "url": "/todoList222"
     }
   ],
-  "cellection": [
-    {
-      "id":30001,
-      "type": 1,
-      "title": "TodoList3",
-      "desc": "the simplest practice for action of todolist",
-      "url": "/todoList3"
-    },
-    {
-      "id": 30002,
-      "type": 2,
-      "title": "TodoList3",
-      "desc": "the simplest practice for action of todolist",
-      "url": "/todoList33"
-    },
-    {
-      "id": 30003,
-      "type": 3,
-      "title": "TodoList3",
-      "desc": "the simplest practice for action of todolist",
-      "url": "/todoList333"
-    }
-  ]
+  "cellection": []
 }
