@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './common/Header';
 import Border from './common/Border';
-import List from './common/List';
+import Main from './common/Main';
 import Footer from './common/Footer';
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
       <React.Fragment>
         <Header />
         <Border />
-        <List />
+        <Main />
         <Border />
         <Footer />
       </React.Fragment>
