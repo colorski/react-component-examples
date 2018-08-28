@@ -9,6 +9,12 @@
   height: 60px;
 }
 
+.App-header .link {
+  display: flex;
+  text-decoration: none;
+  color: #333;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

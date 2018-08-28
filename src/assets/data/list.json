@@ -1,44 +1,78 @@
-[
-  {
-    "id": 10001,
-    "type": 1,
-    "title": "TodoList功能考察",
-    "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
-    "url": "/TodoList"
-  },
-  {
-    "id": 10002,
-    "type": 2,
-    "title": "TodoList",
-    "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
-    "url": "/TodoList"
-  },
-  {
-    "id": 10003,
-    "type": 3,
-    "title": "TodoList",
-    "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
-    "url": "/TodoList"
-  },
-  {
-    "id": 10004,
-    "type": 1,
-    "title": "TodoList",
-    "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
-    "url": "/TodoList"
-  },
-  {
-    "id": 10005,
-    "type": 2,
-    "title": "TodoList",
-    "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
-    "url": "/TodoList"
-  },
-  {
-    "id": 10006,
-    "type": 3,
-    "title": "TodoList",
-    "desc": "最简单的TodoList组件，包含列表，添加，删除功能。主要考察父子组件的传值。",
-    "url": "/TodoList"
-  }
-]
+{
+  "exercise": [
+    {
+      "id": 10001,
+      "type": 1,
+      "title": "HelloReact",
+      "desc": "the simplest practice for action of todolist",
+      "url": "/sayhello"
+    },
+    {
+      "id": 10010,
+      "type": 1,
+      "title": "TodoList",
+      "desc": "the simplest practice for action of todolist",
+      "url": "/todoList"
+    },
+    {
+      "id": 10002,
+      "type": 2,
+      "title": "TodoList11",
+      "desc": "the simplest practice for action of todolist",
+      "url": "/todoList11"
+    },
+    {
+      "id": 10003,
+      "type": 3,
+      "title": "TodoList",
+      "desc": "the simplest practice for action of todolist",
+      "url": "/todoList111"
+    }
+  ],
+  "production": [
+    {
+      "id": 20001,
+      "type": 1,
+      "title": "TodoList2",
+      "desc": "the simplest practice for action of todolist",
+      "url": "/todoList2"
+    },
+    {
+      "id": 20002,
+      "type": 2,
+      "title": "TodoList2",
+      "desc": "the simplest practice for action of todolist",
+      "url": "/todoList22"
+    },
+    {
+      "id": 20003,
+      "type": 3,
+      "title": "TodoList2",
+      "desc": "the simplest practice for action of todolist",
+      "url": "/todoList222"
+    }
+  ],
+  "cellection": [
+    {
+      "id":30001,
+      "type": 1,
+      "title": "TodoList3",
+      "desc": "the simplest practice for action of todolist",
+      "url": "/todoList3"
+    },
+    {
+      "id": 30002,
+      "type": 2,
+      "title": "TodoList3",
+      "desc": "the simplest practice for action of todolist",
+      "url": "/todoList33"
+    },
+    {
+      "id": 30003,
+      "type": 3,
+      "title": "TodoList3",
+      "desc": "the simplest practice for action of todolist",
+      "url": "/todoList333"
+    }
+  ]
+}

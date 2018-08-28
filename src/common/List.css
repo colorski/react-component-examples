@@ -31,14 +31,19 @@
   background-color: #f9f9f9;
 }
 
-.list-wrapper > ul > li > h3 {
+.list-wrapper > ul > li > a {
+  text-decoration: none;
+  color: #333;
+}
+
+.list-wrapper > ul > li h3 {
   line-height: 1.8;
   margin-bottom: 8px;
   font-weight: bold;
   cursor: pointer;
 }
 
-.list-wrapper > ul > li > p {
+.list-wrapper > ul > li p {
   line-height: 1.8;
   color: #666;
 }
