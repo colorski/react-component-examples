@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class TimerSecond extends Component {
+class SecondsTimer extends Component {
   constructor(props) {
     super(props);
     this.state = { seconds: 0 };
@@ -22,11 +22,11 @@ class TimerSecond extends Component {
 
   render() {
     return (
-      <div style={{flex: 1, margin:'2rem 0', textAlign: 'center'}}>
+      <div className="center">
         Seconds: {this.state.seconds}
       </div>
     );
   }
 }
 
-export default TimerSecond;
+export default SecondsTimer;

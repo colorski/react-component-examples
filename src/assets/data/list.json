@@ -4,46 +4,25 @@
       "id": 10001,
       "type": 1,
       "title": "HelloReact",
-      "desc": "React components implement a render() method that takes input data and returns what to display. Input data that is passed into the component can be accessed by render() via this.props.",
+      "desc": "Input data that is passed into the component can be accessed by render() via this.props.",
       "url": "/sayhello"
     },
     {
       "id": 10002,
       "type": 1,
-      "title": "TimerSecond",
-      "desc": "the simplest practice for action of todolist",
-      "url": "/timersecond"
-    },
+      "title": "SecondsTimer",
+      "desc": "Use of timer. Do the corresponding things in different lifecycle.",
+      "url": "/secondstimer"
+    }
+  ],
+  "production": [],
+  "cellection": [
     {
       "id": 10003,
       "type": 1,
       "title": "TodoList",
-      "desc": "the simplest practice for action of todolist",
-      "url": "/todoList"
+      "desc": "Data transfer between parent components and child components",
+      "url": "/todolist"
     }
-  ],
-  "production": [
-    {
-      "id": 20001,
-      "type": 1,
-      "title": "TodoList2",
-      "desc": "the simplest practice for action of todolist",
-      "url": "/todoList2"
-    },
-    {
-      "id": 20002,
-      "type": 2,
-      "title": "TodoList2",
-      "desc": "the simplest practice for action of todolist",
-      "url": "/todoList22"
-    },
-    {
-      "id": 20003,
-      "type": 3,
-      "title": "TodoList2",
-      "desc": "the simplest practice for action of todolist",
-      "url": "/todoList222"
-    }
-  ],
-  "cellection": []
+  ]
 }

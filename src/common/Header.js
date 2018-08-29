@@ -9,7 +9,7 @@ export default class Header extends Component {
 			<header className="App-header">
 				<Link to='/' className="link">
 					<img src={logo} className="App-logo" alt="logo" />
-					<h1 className="App-title">Welcome to</h1>
+					<h1 className="App-title">Welcome</h1>
 				</Link>
 			</header>
 		)
