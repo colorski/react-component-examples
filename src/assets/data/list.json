@@ -3,26 +3,40 @@
     {
       "id": 10001,
       "type": 1,
-      "title": "HelloReact",
+      "title": "SayHello",
       "desc": "Input data that is passed into the component can be accessed by render() via this.props.",
-      "url": "/sayhello"
+      "url": "/SayHello"
     },
     {
       "id": 10002,
       "type": 1,
       "title": "SecondsTimer",
       "desc": "Use of timer. Do the corresponding things in different lifecycle.",
-      "url": "/secondstimer"
-    }
-  ],
-  "production": [],
-  "cellection": [
+      "url": "/SecondsTimer"
+    },
     {
       "id": 10003,
       "type": 1,
       "title": "TodoList",
-      "desc": "Data transfer between parent components and child components",
-      "url": "/todolist"
+      "desc": "Data transfer between parent components and child components. Using attributes or methods.",
+      "url": "/TodoList"
     }
-  ]
+  ],
+  "production": [
+    {
+      "id": 20001,
+      "type": 2,
+      "title": "Use Iconfont",
+      "desc": "The method for importing Iconfont, coding method and use of Icon component.",
+      "url": "/UseIcon"
+    },
+    {
+      "id": 20002,
+      "type": 2,
+      "title": "Use Input",
+      "desc": "The method for importing Iconfont, coding method and use of Icon component.",
+      "url": "/UseInput"
+    }
+  ],
+  "cellection": []
 }
