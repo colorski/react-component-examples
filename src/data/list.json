@@ -34,7 +34,7 @@
       "id": 20002,
       "type": 2,
       "title": "Use FormElement",
-      "desc": "The method for importing Iconfont, coding method and use of Icon component.",
+      "desc": "The simplest component for select element.",
       "url": "/UseFormElement"
     },
     {

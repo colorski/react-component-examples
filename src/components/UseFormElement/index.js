@@ -3,19 +3,17 @@ import Select from '../Select';
 
 export default class extends Component {
   state = {
-    contactorId: 1002,
-    options: [{key: 1001, text: '张三'}, {key: 1002, text: '李四'}, {key: 1003, text: '王二'}]
+    stageVal: 2,
+    options: [{key: 1, text: '小学'}, {key: 2, text: '初中'}, {key: 3, text: '高中'}]
   }
   render () {
-    const {contactorId, options} = this.state
+    const {stageVal, options} = this.state
     return (
       <div className="form-element">
         <Select
-          placeholder="选择联系人"
-          emptyitem="true"
-          value={contactorId}
-          options={options}
-          onChange={e=>{console.log(e.target.value)}}
+          value={stageVal}
+          options={ options }
+          onChange={e=>{this.setState({stageVal: e.target.value}); console.log(e.target.value)}}
         />
       </div>
     )
