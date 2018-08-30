@@ -33,9 +33,16 @@
     {
       "id": 20002,
       "type": 2,
-      "title": "Use Input",
+      "title": "Use FormElement",
       "desc": "The method for importing Iconfont, coding method and use of Icon component.",
-      "url": "/UseInput"
+      "url": "/UseFormElement"
+    },
+    {
+      "id": 20003,
+      "type": 2,
+      "title": "Use SearchInput",
+      "desc": "The method for importing Iconfont, coding method and use of Icon component.",
+      "url": "/UseSearchInput"
     }
   ],
   "cellection": []
