@@ -1,0 +1,33 @@
+.xkcpn-form-item {
+  display: flex;
+  line-height: 20px;
+  padding: 2px 0;
+}
+.xkcpn-form-item .label {
+  text-align: right;
+  width: 100px;
+}
+.xkcpn-form-item .required:after {
+  content: '*';
+  color: #f00;
+}
+.xkcpn-form-item .form-item-content {
+  display:flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin-right: 16px;
+}
+.xkcpn-form-item .inline {
+  padding: 0;
+  white-space: nowrap;
+  display: inline-block;
+}
+.xkcpn-form-item .inline .label {
+  display: inline-block;
+  width: auto;
+  margin-left: 32px;
+}
+.xkcpn-form-item .inline .form-item-content {
+  display: inline-block;
+  margin-right: 0;
+}

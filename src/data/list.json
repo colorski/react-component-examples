@@ -33,16 +33,16 @@
     {
       "id": 20002,
       "type": 2,
-      "title": "Use FormElement",
-      "desc": "The simplest component for select element.",
-      "url": "/UseFormElement"
+      "title": "Use RadioGroup and FormItem",
+      "desc": "A group of radios in label tags; the structure component of FormItem which was used in form element or others.",
+      "url": "/UseRadioGroup"
     },
     {
       "id": 20003,
       "type": 2,
-      "title": "Use SearchInput",
-      "desc": "The method for importing Iconfont, coding method and use of Icon component.",
-      "url": "/UseSearchInput"
+      "title": "Use Select",
+      "desc": "The simplest component for select element.",
+      "url": "/UseSelect"
     }
   ],
   "cellection": []

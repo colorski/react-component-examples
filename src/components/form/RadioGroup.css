@@ -1,0 +1,10 @@
+
+.xkcpn-radio-group label {
+  margin-right: 8px;
+}
+.xkcpn-radio-group .disabled {
+  color: #aaa;
+}
+.xkcpn-radio-group :last-child {
+  margin-right: 0;
+}

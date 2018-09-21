@@ -8,8 +8,8 @@ import SecondsTimer from '../components/SecondsTimer'
 import TodoList from '../components/TodoList'
 
 import UseIcon from '../components/UseIcon'
-import UseFormElement from '../components/UseFormElement'
-import UseSearchInput from '../components/UseSearchInput'
+import UseSelect from '../components/UseSelect'
+import UseRadioGroup from '../components/UseRadioGroup'
 
 export default class Main extends Component {
   render(){
@@ -25,8 +25,8 @@ export default class Main extends Component {
 
         {/* production */}
         <Route path="/UseIcon" render={()=><UseIcon />}></Route>
-        <Route path="/UseFormElement" render={()=><UseFormElement />}></Route>
-        <Route path="/UseSearchInput" render={()=><UseSearchInput />}></Route>
+        <Route path="/UseSelect" render={()=><UseSelect />}></Route>
+        <Route path="/UseRadioGroup" render={()=><UseRadioGroup />}></Route>
 
         {/* cellection */}
         
