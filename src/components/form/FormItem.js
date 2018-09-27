@@ -1,6 +1,6 @@
 import React from 'react'
 import _ from 'underscore'
-import {genClassName as cns} from '../../utils/cns'
+import {genClassName as cns} from '../../utils/component'
 import './FormItem.css'
 
 export default function({inline, label, labelWidth, children, className, required, style, flex}){

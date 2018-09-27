@@ -1,0 +1,34 @@
+.xkcpn-pager {
+  text-align: right;
+  font-size: 12px;
+}
+.xkcpn-pager .pagesize-select {
+  margin-right: 8px;
+}
+.xkcpn-pager i, .xkcpn-pager input {
+  font-style: normal;
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 6px;
+  margin-right: 4px;
+  background-color: #fff;
+  border: 1px solid #B2BFCF;
+}
+.xkcpn-pager i.page-block, .xkcpn-pager input.page-block {
+  cursor: pointer;
+}
+.xkcpn-pager i.page-block:hover, .xkcpn-pager input.page-block:hover {
+  border: 1px solid #0066FF;
+}
+.xkcpn-pager i.page-block.current, .xkcpn-pager input.page-block.current {
+  border: 1px solid #0066FF;
+  background-color: #0066FF;
+  color: #fff;
+  cursor: default;
+}
+.xkcpn-pager .jumper input {
+  width: 50px;
+}
+
+

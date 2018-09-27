@@ -1,0 +1,12 @@
+
+.xk-cpn-flex{
+  display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+  text-decoration: none;
+}
+.xk-cpn-flex-v{
+  display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+  flex-direction: column;
+}
+.xk-cpn-flex .xk-cpn-flex-item{
+  display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+}

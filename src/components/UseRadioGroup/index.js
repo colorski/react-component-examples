@@ -55,7 +55,8 @@ export default class extends Component {
 //    required={ true }     是否必填（是否显示 * ） 也可以是 直接 required
 //    inline                行内元素
 //    flex='1'              这个值自己去尝试，为1 时填满整个宽度
-//    className 和 style    这俩用于改变样式
+//    style                 用于改变此组件整体的样式，是给xkcpm-form-item的
+//    className             给form-item-content类的-与之并列
 // />
 // content
 // </FormItem>

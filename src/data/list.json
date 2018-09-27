@@ -43,7 +43,29 @@
       "title": "Use Select",
       "desc": "The simplest component for select element.",
       "url": "/UseSelect"
+    },
+    {
+      "id": 20004,
+      "type": 2,
+      "title": "Use Modal",
+      "desc": "The simplest component for select element.",
+      "url": "/UseModal"
+    },
+    {
+      "id": 20005,
+      "type": 2,
+      "title": "Use Pager",
+      "desc": "The simplest component for select element.",
+      "url": "/UsePager"
     }
   ],
-  "cellection": []
+  "cellection": [
+    {
+      "id": 30001,
+      "type": 3,
+      "title": "Use Mobile Flex",
+      "desc": "The simplest component for select element.",
+      "url": "/UseMobileFlex"
+    }
+  ]
 }
