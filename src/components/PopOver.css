@@ -1,0 +1,53 @@
+.xkcpn-popover {
+  position: relative;
+}
+.xkcpn-popover .mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 10000px;
+  height: 10000px;
+  z-index: 100;
+}
+.xkcpn-popover .popup {
+  position: absolute;
+  z-index: 100;
+  min-width: 20px
+}
+.xkcpn-popover > .right {
+  left: 100%;
+}
+.xkcpn-popover > .left {
+  right: 100%;
+}
+.xkcpn-popover .popup-inner {
+  position: relative;
+  border: 1px solid #298cce;
+  background: #fff;
+  min-height: 28px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2)
+}
+.xkcpn-popover .popup-inner.right {
+  margin-left: 10px;
+}
+.xkcpn-popover .popup-inner.left {
+  margin-right: 10px;
+}
+.xkcpn-popover .popup-inner .arrow {
+  display: block;
+  position: absolute;
+  display: block;
+}
+.xkcpn-popover .popup-inner .arrow.left,
+.xkcpn-popover .popup-inner .arrow.right {
+  height: 17px;
+  width: 10px;
+}
+.xkcpn-popover .popup-inner .arrow.right {
+  left: -10px;
+  background: url(../images/arrow-left.png);
+}
+.xkcpn-popover .popup-inner .arrow.left {
+  right: -10px;
+  background: url(../images/arrow-right.png);
+}

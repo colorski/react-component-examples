@@ -57,6 +57,13 @@
       "title": "Use Pager",
       "desc": "The simplest component for select element.",
       "url": "/UsePager"
+    },
+    {
+      "id": 20006,
+      "type": 2,
+      "title": "Use PopOver",
+      "desc": "The simplest component for select element.",
+      "url": "/UsePopOver"
     }
   ],
   "cellection": [
