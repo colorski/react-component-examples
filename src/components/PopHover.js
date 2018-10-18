@@ -14,8 +14,8 @@ export default class PopHover extends Component{
   }
 
   render(){
-    const {content, children, placement, trigger, className, offset} = this.props
-    const topOrBottom = /bottom/.test(placement) ?  'top': 'bottom'
+    const {content, children, placement, trigger, className, popupTop, popupLeft} = this.props
+    const topOrBottom = /bottom/.test(placement) || /left/.test(placement) || /right/.test(placement) ?  'top': 'bottom'
 
     return <span className={genClassName("xkcpn-pophover", className)}
       onMouseOver={this.overHandler}
@@ -26,7 +26,7 @@ export default class PopHover extends Component{
         <div className="mask" onClick={()=>this.setState({show: false})}/>
       }
       {children}
-      {this.state.show && <div className={"popup " + placement}  style={{[topOrBottom]: offset+'px'}}>
+      {this.state.show && <div className={"popup " + placement}  style={{[topOrBottom]: popupTop+'px', left: popupLeft+'px'}}>
         <div className={"popup-inner " + placement}>
           {content}
         </div>
@@ -79,17 +79,12 @@ PopHover.defaultProps = {
 }
 
 
-
-
-{/* 
-  
-<PopHover
-  placement='top'     -- 位置，当用到top或bottom时，会用到popTop去调整位置
-  trigger="click"
-  offset={40}
-  content={}            
->
-  <span>鼠标点击</span>
-</PopHover> 
-
-*/}
+// <PopHover
+//   placement='top'     -- 位置，当用到top或bottom时，会用到popupTop, popupLeft去调整位置
+//   trigger="click"
+//   popupTop={40}
+//   popupLeft={40}
+//   content={}            
+// >
+//   <span>鼠标点击</span>
+// </PopHover> 

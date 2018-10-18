@@ -51,30 +51,70 @@ export default class extends Component {
         <h1>PopHover</h1>
       <hr />
       
-      <h2 style={{height: '40px', lineHeight: '40px', borderBottom: '1px dashed #ccc'}}>third-placement='top'</h2>
+      <h2 style={{height: '40px', lineHeight: '40px', borderBottom: '1px dashed #ccc'}}>one-placement='right' trigger='click'</h2>
       <div style={{padding: '30px', textAlign: 'center'}}>
         <PopHover
-          placement='top'
-          offset={40}
+          placement='right'
           trigger='click'
           content={<div style={{padding: '10px', width: '200px'}}>
-            <p>这是说明文字！也可以是任意内容的组件！</p>
+            <p>这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！</p>
           </div>}
         >
           <span style={{cursor: 'pointer'}}>鼠标点击</span>
+          {/* <span style={{cursor: 'pointer', display:'inline-block', width: '200px', height: '300px'}}>鼠标点击</span> */}
         </PopHover>
       </div>
       
-      <h2 style={{height: '40px', lineHeight: '40px', borderBottom: '1px dashed #ccc'}}>third-placement='bottom'</h2>
+      <h2 style={{height: '40px', lineHeight: '40px', borderBottom: '1px dashed #ccc'}}>two-placement='left'</h2>
+      <div style={{padding: '30px', textAlign: 'center'}}>
+        <PopHover
+          placement='left'
+          content={<div style={{padding: '10px', width: '120px'}}>
+            <p>这是说明文字！</p>
+          </div>}
+        >
+          <span style={{cursor: 'pointer'}}>鼠标移入</span>
+        </PopHover>
+      </div>
+      
+      <h2 style={{height: '40px', lineHeight: '40px', borderBottom: '1px dashed #ccc'}}>three-placement='right' trigger='click' popupTop={40}</h2>
+      <div style={{padding: '30px', textAlign: 'center'}}>
+        <PopHover
+          placement='top'
+          popupTop={40}
+          popupLeft={70}
+          trigger='click'
+          content={<div style={{padding: '10px', width: '200px'}}>
+            <p>这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！</p>
+          </div>}
+        >
+          <span style={{cursor: 'pointer', display:'inline-block', width: '200px', height: '300px'}}>鼠标点击</span>
+        </PopHover>
+      </div>
+      
+      <h2 style={{height: '40px', lineHeight: '40px', borderBottom: '1px dashed #ccc'}}>four-placement='top' 上</h2>
+      <div style={{padding: '30px', textAlign: 'center'}}>
+        <PopHover
+          placement='top'
+          content={<div style={{padding: '10px', width: '120px'}}>
+            <p>这是说明文字！</p>
+          </div>}
+        >
+          <span style={{cursor: 'pointer'}}>鼠标移入</span>
+        </PopHover>
+      </div>
+      
+      <h2 style={{height: '40px', lineHeight: '40px', borderBottom: '1px dashed #ccc'}}>four-placement='bottom' popupTop={50} popupLeft={50} 下</h2>
       <div style={{padding: '30px', textAlign: 'center'}}>
         <PopHover
           placement='bottom'
-          offset={40}
-          content={<div style={{padding: '10px', width: '200px'}}>
-            <p>这是说明文字！也可以是任意内容的组件！</p>
+          popupTop={50}
+          popupLeft={50}
+          content={<div style={{padding: '10px', width: '120px'}}>
+            <p>这是说明文字！</p>
           </div>}
         >
-          <span style={{cursor: 'pointer'}}>鼠标点击</span>
+          <span style={{cursor: 'pointer'}}>鼠标移入</span>
         </PopHover>
       </div>
 
@@ -85,21 +125,19 @@ export default class extends Component {
 
 ////////////////////////////// PopOver Modal:   
 
-{/* 
+// <Pophover
+//   placement='left'     //left or right 出现在目标的左还是右
+//   popupTop={140}       //控制弹出框上下的位置  注意：以此来控制三角的位置，但三角相对弹窗的位置是不能改变的
+//   popupLeft={100}      //控制弹出框左右的位置  注意：以此来控制三角的位置，但三角相对弹窗的位置是不能改变的
+//   trigger="click"      //默认是hover，如果写了这一项，是点击事件
+//   content={<div style={{padding: '10px', width: '200px'}}>
+//     <p>这是说明文字！也可以是任意内容的组件！</p>
+//   </div>}
+// >
+//   <span>鼠标点击</span>   //目标元素，也可以是一个图标
+// </PopOver> 
 
-<PopOver
-  offsetTop={10}       //方向图标的上下偏移值
-  placement='left'     //left or right 出现在目标的左还是右
-  trigger="click"      //默认是hover，如果写了这一项，是点击事件
-  content={<div style={{padding: '10px', width: '200px'}}>
-    <p>这是说明文字！也可以是任意内容的组件！</p>
-  </div>}
->
-  <span>鼠标点击</span>   //目标元素，也可以是一个图标
-</PopOver> 
 
-*/}
+// //注意：popOver用了方向图片，只展示左右方向的，没有上下方向        popHover有上下左右方向，没用图片用的伪类，但没法控制三角形的位置，只能控制弹窗位置
 
-// //注意：用了方向图片，只展示左右方向的，没有上下方向
-
-// //推荐使用 PopupOver组件
+// //推荐使用 Pophover组件
