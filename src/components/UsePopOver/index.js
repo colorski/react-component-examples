@@ -6,6 +6,11 @@ export default class extends Component {
   
   render () {
     return <div style={{display: 'block', width: '100%'}}>
+      <hr />
+        <h1>PopOver</h1>
+        <p>三角使用的图片</p>
+      <hr />
+
       {/* first */}
       <h2 style={{height: '40px', lineHeight: '40px', borderBottom: '1px dashed #ccc'}}>first-default</h2>
       <div style={{padding: '30px', textAlign: 'center'}}>
@@ -49,6 +54,7 @@ export default class extends Component {
 
       <hr />
         <h1>PopHover</h1>
+        <p>三角使用的伪类</p>
       <hr />
       
       <h2 style={{height: '40px', lineHeight: '40px', borderBottom: '1px dashed #ccc'}}>one-placement='right' trigger='click'</h2>
@@ -88,7 +94,7 @@ export default class extends Component {
             <p>这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！</p>
           </div>}
         >
-          <span style={{cursor: 'pointer', display:'inline-block', width: '200px', height: '300px'}}>鼠标点击</span>
+          <span style={{cursor: 'pointer', display:'inline-block', width: '200px', height: '200px'}}>鼠标点击</span>
         </PopHover>
       </div>
       
