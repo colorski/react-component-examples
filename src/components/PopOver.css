@@ -15,10 +15,22 @@
   min-width: 20px
 }
 .xkcpn-popover > .right {
+  top: -10px;
   left: 100%;
+  margin-left: 15px;
 }
 .xkcpn-popover > .left {
+  top: -10px;
   right: 100%;
+  margin-right: 15px;
+}
+.xkcpn-popover > .top {
+  left: 0;
+  bottom: 30px;
+}
+.xkcpn-popover > .bottom {
+  left: 0;
+  top: 30px;
 }
 .xkcpn-popover .popup-inner {
   position: relative;
@@ -26,12 +38,6 @@
   background: #fff;
   min-height: 28px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2)
-}
-.xkcpn-popover .popup-inner.right {
-  margin-left: 10px;
-}
-.xkcpn-popover .popup-inner.left {
-  margin-right: 10px;
 }
 .xkcpn-popover .popup-inner .arrow {
   display: block;
@@ -42,6 +48,13 @@
 .xkcpn-popover .popup-inner .arrow.right {
   height: 17px;
   width: 10px;
+  top: 6px;
+}
+.xkcpn-popover .popup-inner .arrow.top,
+.xkcpn-popover .popup-inner .arrow.bottom {
+  width: 17px;
+  height: 10px;
+  left: 10px;
 }
 .xkcpn-popover .popup-inner .arrow.right {
   left: -10px;
@@ -50,4 +63,12 @@
 .xkcpn-popover .popup-inner .arrow.left {
   right: -10px;
   background: url(../images/arrow-right.png);
+}
+.xkcpn-popover .popup-inner .arrow.top {
+  bottom: -10px;
+  background: url(../images/arrow-down.png);
+}
+.xkcpn-popover .popup-inner .arrow.bottom {
+  top: -10px;
+  background: url(../images/arrow-up.png);
 }

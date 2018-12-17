@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import _ from 'underscore';
 import './Flex.css';
 
 export function Flex(props) {
-    const { position, style, href, elRef} = props
-    let className = 'xk-cpn-flex'
-    if(props.v) className += ' xk-cpn-flex-v'
+    const { align, style, href, to, elRef} = props
+    let className = 'ski-cpn-flex'
+    if(props.v) className += ' ski-cpn-flex-v'
     if(props.className) className += (' '+props.className)
     const flex = props.flex || 1
     const newStyle = _.extend({
@@ -13,20 +14,24 @@ export function Flex(props) {
       WebkitFlex: flex,
       msFlex: flex,
       flex: /^\d+$/.test(flex) ? flex + ' 1 0' : flex
-    }, position ? {
-      WebkitBoxAlign: position,
-      alignItems: position,
-      WebkitBoxPack: position,
-      justifyContent: position
+    }, align ? {
+      WebkitBoxAlign: align,
+      alignItems: align,
+      WebkitBoxPack: align,
+      justifyContent: align
     } : {}, style)
     props = _.extend(
-      _.omit(props, 'v', 'flex', 'position', 'to', 'ref'),
+      _.omit(props, 'v', 'flex', 'align', 'to', 'ref'),
       { className, style: newStyle }
     )
     let Tag = 'div'
     if(href) Tag = 'a'
-    //if(to) props.onClick = function(){XK_HISTORY.push(to)}
-    return <Tag {...props} ref={elRef}/>
+    if(to){
+      return <Link {...props} to={to} />
+    }else{
+      return <Tag {...props} ref={elRef}/>
+    }
+    //if(to) props.onClick = function(){SKI_HISTORY.push(to)}
 }
 
 export const FlexItem = Flex

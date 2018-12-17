@@ -78,3 +78,6 @@ export default class Pager extends Component{
 Pager.defaultProps = {
   eeid: ''
 }
+
+
+//<Pager pageSizer={pageSizer} {...pagination} onChange={onChange} eearg={eearg} eeid={eeid}/>

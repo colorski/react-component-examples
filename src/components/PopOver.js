@@ -14,8 +14,8 @@ export default class PopOver extends Component{
   }
 
   render(){
-    const {content, children, placement, offsetTop, trigger, className} = this.props
-    const topOrBottom = /bottom/.test(placement) ? 'bottom' : 'top'
+    const {content, children, placement, trigger, className, popupTop, arrowTop, popupLeft, arrowLeft} = this.props
+    const topOrBottom = /bottom/.test(placement) || /left/.test(placement) || /right/.test(placement) ?  'top': 'bottom'
 
     return <span className={genClassName("xkcpn-popover", className)}
       onMouseOver={this.overHandler}
@@ -26,10 +26,10 @@ export default class PopOver extends Component{
         <div className="mask" onClick={()=>this.setState({show: false})}/>
       }
       {children}
-      {this.state.show && <div className={"popup " + placement} style={{[topOrBottom]: (-offsetTop)+'px'}}>
+      {this.state.show && <div className={"popup " + placement} style={{[topOrBottom]: popupTop+'px', left: popupLeft+'px'}}>
         <div className={"popup-inner " + placement}>
           {content}
-          <i className={"arrow " + placement} style={{[topOrBottom]: (offsetTop-2)+'px'}}/>
+          <i className={"arrow " + placement} style={{[topOrBottom]: arrowTop+'px', left: arrowLeft+'px'}}/>
         </div>
 
       </div>}
@@ -72,7 +72,6 @@ export default class PopOver extends Component{
 }
 
 PopOver.defaultProps = {
-  offsetTop: 8,
   trigger: 'hover',
   placement: 'right',
   timeout: 300,

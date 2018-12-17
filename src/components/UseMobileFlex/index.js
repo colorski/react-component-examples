@@ -5,8 +5,21 @@ export default class extends Component {
   
   render () {
     return (
-      <Flex className="title">
-        Flex child
+      <Flex>
+        <Flex style={{height: '30px', lineHeight: '30px'}}>
+          <Flex>
+            Flex child
+          </Flex>
+          <Flex align="center">
+            position center
+          </Flex>
+          <Flex href="/" target="_blank">
+            a href
+          </Flex>
+          <Flex to="/UseIcon">
+            Link to /UseIcon
+          </Flex>
+        </Flex>
       </Flex>
     )
   }

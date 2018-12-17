@@ -9,7 +9,7 @@ export default class extends Component {
       pagination: {
         current: 1,
         pageSize: 20,
-        total: 383268
+        total: 3268
       }
     }
   }
@@ -24,14 +24,9 @@ export default class extends Component {
   }
 }
 
-////////////////////////////// Select Modal:
+////////////////////////////// Pager:
 
-// <Modal
-//   title="title-选择学段"
-//   onCancel={()=> this.setState({show: false})}
-//   extra={'extra-额外信息'}
-//   
-// />
+// //<Pager pageSizer={pageSizer} {...pagination} onChange={onChange} eearg={eearg} eeid={eeid}/>
 
 // //注意：
 

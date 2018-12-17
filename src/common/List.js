@@ -1,46 +1,25 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+//import axios from 'axios';
 import { Link } from 'react-router-dom';
 import './List.css';
 
 export default class List extends Component {
-  constructor (props) {
-    super(props);
-    this.state = {
-      listData: {
-        "exercise": [],
-        "production": [],
-        "cellection": []
-      }
-    }
-  }
-
-  componentDidMount () {
-    axios.get('/data/list')
-      .then((res) =>
-        {
-          const data = {...res.data};
-          this.setState({
-            listData: data
-          })
-        }
-      )
-      .catch((err) => console.log(err))
-  }
 
   render () {
+    let list = {};
+    if(this.props.list!==null){list = this.props.list}
+    const { exercise, production, cellection } = list;
     return (
       <div className="list-wrapper">
-        <ul>{ this.initExercise() }</ul>
-        <ul>{ this.initProduction() }</ul>
-        <ul>{ this.initCellection() }</ul>
+        <ul>{ this.initExercise(exercise) }</ul>
+        <ul>{ this.initProduction(production) }</ul>
+        <ul>{ this.initCellection(cellection) }</ul>
       </div>
     )
   }
 
-  initExercise () {
-    const { exercise } = this.state.listData;
-    if(exercise.length){
+  initExercise (exercise) {
+    if(exercise && exercise.length){
       return (
         exercise.map((item) => (
           <li key={item.id}>
@@ -58,9 +37,8 @@ export default class List extends Component {
     }
   }
 
-  initProduction () {
-    const { production } = this.state.listData;
-    if(production.length){
+  initProduction (production) {
+    if(production && production.length){
       return (
         production.map((item) => (
           <li key={item.id}>
@@ -78,9 +56,8 @@ export default class List extends Component {
     }
   }
 
-  initCellection () {
-    const { cellection } = this.state.listData;
-    if(cellection.length){
+  initCellection (cellection) {
+    if(cellection && cellection.length){
       return (
         cellection.map((item) => (
           <li key={item.id}>
@@ -98,5 +75,8 @@ export default class List extends Component {
     }
   }
 
+  componentDidMount(){
+    this.props.onInit()
+  }
 
 }

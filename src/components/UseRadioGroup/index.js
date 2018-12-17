@@ -1,27 +1,39 @@
 import React, { Component } from 'react';
 import RadioGroup from '../form/RadioGroup';
 import FI from '../form/FormItem'
+import Select from '../form/Select'
 
 export default class extends Component {
   constructor (props) {
     super(props)
     this.state = {
       stageVal: 2,
-      options: [{key: 1, text: '小学'}, {key: 2, text: '初中'}, {key: 3, text: '高中'}]
+      stage: 3,
+      options: [{key: 1, text: '小学'}, {key: 2, text: '初中'}, {key: 3, text: '高中', disabled: true}]
     }
   }
   
   render () {
-    const { stageVal, options } = this.state;
+    const { stageVal, stage, options } = this.state;
     return (
-      <FI label="学段" labelWidth='80px' required={ true }>
-        <RadioGroup
-          options={ options }
-          value={ stageVal }
-          disabled={ false }
-          onChange={ v=>{this.setState({stageVal: v}); console.log(v)} }
-        />
-      </FI>
+      <div>
+        <FI label="单选学段" labelWidth='100px' required={ true }>
+          <RadioGroup
+            options={ options }
+            value={ stageVal }
+            disabled={ false }
+            onChange={ v=>{this.setState({stageVal: v}); console.log('单选学段：'+v)} }
+          />
+        </FI>
+        <FI label="下拉学段" labelWidth='100px' required={ true }>
+          <Select style={{ width: '80px' }}
+            value={ stage }
+            options={ options }
+            all = { 1 }
+            onChange={e=>{this.setState({stage: e.target.value}); console.log('下拉学段：'+e.target.value)}}
+          />
+        </FI>
+      </div>
     )
   }
 }

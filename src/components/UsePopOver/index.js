@@ -5,8 +5,7 @@ import PopHover from '../PopHover';
 export default class extends Component {
   
   render () {
-    return <div style={{display: 'block', width: '100%'}}>
-      <hr />
+    return <div style={{display: 'block', width: '100%', paddingTop: '15px'}}>
         <h1>PopOver</h1>
         <p>三角使用的图片</p>
       <hr />
@@ -41,7 +40,6 @@ export default class extends Component {
       <h2 style={{height: '40px', lineHeight: '40px', borderBottom: '1px dashed #ccc'}}>third-trigger="click"</h2>
       <div style={{padding: '30px', textAlign: 'center'}}>
         <PopOver
-          offsetTop={10}
           placement='left'
           trigger="click"
           content={<div style={{padding: '10px', width: '200px'}}>
@@ -49,6 +47,19 @@ export default class extends Component {
           </div>}
         >
           <span>鼠标点击</span>
+        </PopOver>
+      </div>
+      
+      {/* forth */}
+      <h2 style={{height: '40px', lineHeight: '40px', borderBottom: '1px dashed #ccc'}}>forth-trigger="click" placement='top'</h2>
+      <div style={{padding: '30px', textAlign: 'center'}}>
+        <PopOver
+          trigger='click'
+          content={<div style={{padding: '10px', width: '200px'}}>
+            <p>这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！这是说明文字！也可以是任意内容的组件！</p>
+          </div>}
+        >
+          <span style={{cursor: 'pointer', display:'inline-block', width: '200px', height: '300px'}}>鼠标点击</span>
         </PopOver>
       </div>
 
@@ -115,7 +126,7 @@ export default class extends Component {
         <PopHover
           placement='bottom'
           popupTop={50}
-          popupLeft={50}
+          popupLeft={-150}
           content={<div style={{padding: '10px', width: '120px'}}>
             <p>这是说明文字！</p>
           </div>}
