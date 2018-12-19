@@ -68,3 +68,8 @@ table {
 	margin: 2rem 0;
 	text-align: center;
 }
+
+.m-wrapper {
+	max-width: 680px;
+	margin: 0 auto;
+}
