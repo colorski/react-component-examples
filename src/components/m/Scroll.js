@@ -18,7 +18,7 @@ export default class Scroll extends Component {
 
   render(){
     const {className, children, direction, goToTopButton, onRefresh} = this.props
-    return <div className={cns('xkcpn-scroll', 'scroll-'+direction, className)} ref={el => this.bodyEl = el}>
+    return <div className={cns('xkcpn-scroll', 'scroll-' + direction, className)} ref={el => this.bodyEl = el}>
       <div className='scroll-inner'>
         {onRefresh && direction === 'y' && <div className="above-top" ref={el => this.refreshTipEl = el}>
           <Icon type="pulldown" className={cns('pulldown-icon', this.state.satisfyRefresh && 'up')} />
@@ -28,7 +28,7 @@ export default class Scroll extends Component {
       </div>
       {goToTopButton && <GoToTopButton 
         show={this.state.showGoToTop}
-        onClick={()=>this.scrollView.scrollTo(0, 0, 200)}
+        onClick={()=>this.scrollView.scrollTo(0, 0, 300)}
       />}
     </div>
   }

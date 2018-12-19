@@ -43,7 +43,7 @@ export default class Select extends Component{
     // const colMaxHeight = Math.round(window.document.documentElement.getBoundingClientRect().height*0.6)
     const noValue = !_.any(valueGroup)
 
-    this.renderSelectorInCtn(optionsGroup)
+    //this.renderSelectorInCtn(optionsGroup)
 
     return <div className={cns('xkcpn-select', showSelector&&'selecting', disabled && 'disabled', className)}
       onClick={()=> {
@@ -59,26 +59,6 @@ export default class Select extends Component{
         {icon}
       </Flex>}
     </div>
-    // $$('div', {
-    //   eeid: eeid ? 'sel-btn_'+eeid : 'null',
-    //   eearg,
-    //   className: cns('xkcpn-select', showSelector&&'selecting', disabled && 'disabled', className),
-    //   onClick: ()=> {
-    //     if(disabled || this.state.showSelector) return
-    //     setTimeout(()=>this.show(),1)
-    //   }
-    // },
-    //   children || $$(Flex, {},
-    //     $$(Flex, {
-    //       className: cns('sel-text', noValue && 'empty'),
-    //     },
-    //       noValue ? placeholder :
-    //         (displayValue || selectedGroup.map(item => (item && item.text) || ''))
-    //     ),
-    //     icon
-    //   ),
-    //   // !getOptionsCtn && this.renderSelector(optionsGroup)
-    // )
   }
 
   renderSelector(optionsGroup){
@@ -127,48 +107,6 @@ export default class Select extends Component{
         {buttonBarPosition!=='top' && this.renderButtonBar()}
       </Flex>
     </div>
-
-    // $$('div', {
-    //   className:'xkcpn-select-selector',
-    //   // onClick(e){e.stopPropagation()}
-    // },
-    //   $$(Drawer, {
-    //     fullScreen: !getOptionsCtn,
-    //     show: showSelector,
-    //     direction: getOptionsCtn ? 'top' : 'bottom',
-    //     height: 'auto',
-    //     onCancel: ()=> {
-    //       this.hide()
-    //       onCancel()
-    //     },
-    //     mask: mask
-    //   },
-    //     buttonBarPosition=='top' && this.renderButtonBar(),
-    //     optionTitleGroup && $$(Flex, {className: 'opt-title'},
-    //       optionTitleGroup.map(title =>
-    //         $$(Flex, {className:"title-text"}, title)
-    //       )
-    //     ),
-    //     $$(Flex, {},
-    //       optionsGroup.map((list, i)=>
-    //         $$(Flex, {className: "opt-col-wrapper"},
-    //           $$('div', {
-    //             className: "opt-col",
-    //             // style: {maxHeight: colMaxHeight}
-    //           },
-    //             this.renderOptionColumn(
-    //               i,
-    //               list,
-    //               valueGroup[this.cascading ? i : 0],
-    //               optionTitleGroup && optionTitleGroup[i]
-    //             )
-    //           )
-    //         )
-    //       )
-    //     ),
-    //     buttonBarPosition!='top' && this.renderButtonBar(),
-    //   )
-    // )
   }
 
   renderButtonBar(){
@@ -190,19 +128,6 @@ export default class Select extends Component{
         </div>
       </Flex>
     </div>
-    // $$('div', {className: cns('btn-bar', buttonBarPosition=="top" ? 'top' : 'bottom')},
-    //   $$(Flex, {},
-    //     $$('div', {className: 'btn', onClick: ()=>{
-    //       onCancel && onCancel(),
-    //       this.hide()
-    //     }}, '取消'),
-    //     $$(Flex),
-    //     $$('div', {
-    //       className: 'btn active',
-    //       onClick: this.okHandler
-    //     }, '确定')
-    //   )
-    // )
   }
 
   okHandler(){
@@ -229,7 +154,6 @@ export default class Select extends Component{
       return <div className="sel-item empty-tip">
         {emptyTip}
       </div>
-      //$$(Flex, {className:'sel-item empty-tip'}, emptyTip)
     return <Scroll
       className="opt-col-scroll"
       rebuildMark={this.state.rebuildMark + optList.length}
@@ -262,7 +186,7 @@ export default class Select extends Component{
               }
             }}
             eeid={optEeid}
-            key={optEeid}
+            key={item.key}
           >
             {item.text}
             {item.subText && <span className="sub-text">
@@ -272,41 +196,6 @@ export default class Select extends Component{
         })
       }
     </Scroll>
-    // $$(Scroll, {
-    //   className: 'opt-col-scroll',
-    //   rebuildMark: this.state.rebuildMark + optList.length,
-    //   onMounted: el => this.scrolls[index] = el
-    // }, optList.map(item => {
-    //   let checked = item.key == (cascadeValues[index] || value)
-    //   if(checked && !item.key)
-    //     checked = _.isUndefined(item.key) || _.isNull(item.key)
-    //   let optEeid = ''
-    //   if(eeid){
-    //     const eeidList = [eeid, title, item.eeid || (_.isString(item.text) ? item.text : item.key)]
-    //     optEeid = eeidList.filter(e=>!!e).join('-')
-    //     optEeid = 'sel-opt_' + optEeid
-    //   }
-    //   return $$(Flex, {
-    //     eeid: optEeid,
-    //     eearg,
-    //     className: cns('sel-item', checked && 'checked'),
-    //     onClick: () => {
-    //       if(this.cascading){
-    //         const newcascadeValues = cascadeValues.slice(0, index).concat(item.key)
-    //         this.setState({
-    //           cascadeValues: newcascadeValues
-    //         })
-    //         onSelect && onSelect(item.key, item, index, newcascadeValues)
-    //       }else{
-    //         const r = onChange(item.key, item)
-    //         r !== false && this.hide()
-    //       }
-    //     }
-    //   },
-    //     item.text,
-    //     item.subText && $$('span', {className: 'sub-text'}, item.subText)
-    //   )
-    // }))
   }
 
   getOptionList(options, i){
