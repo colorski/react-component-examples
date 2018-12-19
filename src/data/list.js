@@ -87,6 +87,13 @@ export const list = {
       "title": "Mobile Timeline",
       "desc": "Just use flex layout. It can be used for PC or mobile, and it can be used as Link tag or a tag.",
       "url": "/UseMobileTimeline"
+    },
+    {
+      "id": 30003,
+      "type": 3,
+      "title": "Mobile Select",
+      "desc": "Just use flex layout. It can be used for PC or mobile, and it can be used as Link tag or a tag.",
+      "url": "/UseMobileSelect"
     }
   ]
 }

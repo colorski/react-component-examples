@@ -1,0 +1,94 @@
+.xkcpn-select {
+  display: inline-block;
+}
+.xkcpn-select .sel-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.xkcpn-select .sel-text.empty {
+  color: #aaa;
+}
+.xkcpn-select .sel-arrow {
+  color: #666;
+  animation-name: rotate-right-back;
+  animation-duration: 0.3s;
+}
+.xkcpn-select.selecting .sel-arrow {
+  transform: rotate(-90deg);
+  animation-name: rotate-right;
+  animation-duration: 0.3s;
+}
+.xkcpn-select.disabled .sel-text {
+  color: #ccc;
+}
+.xkcpn-select.disabled .sel-arrow {
+  color: #ccc;
+  animation-name: none;
+}
+
+.xkcpn-select-selector .btn-bar {
+  border-bottom: solid 1px #ddd;
+  background: #fcfcfc;
+}
+.xkcpn-select-selector .btn-bar .btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: #888;
+}
+.xkcpn-select-selector .btn-bar .btn.active {
+  color: blue;
+}
+.xkcpn-select-selector .btn-bar.bottom {
+  border-bottom: none;
+  border-top: solid 1px #ddd;
+}
+.xkcpn-select-selector .opt-title {
+  border-bottom: solid 1px #eee;
+}
+.xkcpn-select-selector .opt-title .title-text {
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  font-weight: bold;
+  color: #aaa;
+}
+.xkcpn-select-selector .opt-col-wrapper {
+  align-items: center;
+}
+.xkcpn-select-selector .opt-col-wrapper .opt-col-inner {
+  flex: 1;
+  text-align: left ;
+  padding-left: 3rem;
+}
+.xkcpn-select-selector .opt-col {
+  width: 100%;
+  overflow: hidden;
+}
+.xkcpn-select-selector .opt-col .opt-col-scroll {
+  max-height: 30rem;
+}
+.xkcpn-select-selector .opt-col .sel-item {
+  width: 100%;
+  padding: .7rem 0;
+  font-size: 1.2rem;;
+  color: #666;
+  align-items: center;
+  justify-content: center;
+}
+.xkcpn-select-selector .opt-col .sel-item .sub-text {
+  color: #999;
+  font-size: 1rem;
+}
+.xkcpn-select-selector .opt-col .sel-item:last-child {
+  border-bottom: none;
+}
+.xkcpn-select-selector .opt-col .sel-item.checked {
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: #E9F5FF;
+  background-image: linear-gradient(90deg, #fff, #E9F5FF, #fff);
+}
+.xkcpn-select-selector .opt-col .empty-tip {
+  color: #ccc;
+}

@@ -17,6 +17,7 @@ import UsePopOver from '../components/UsePopOver'
 
 import UseMobileFlex from '../components/UseMobileFlex'
 import UseMobileTimeline from '../components/UseMobileTimeline'
+import UseMobileSelect from '../components/UseMobileSelect'
 
 export default class Main extends Component {
   render(){
@@ -42,6 +43,7 @@ export default class Main extends Component {
         {/* mobile */}
         <Route path="/UseMobileFlex" render={()=><UseMobileFlex />}></Route>
         <Route path="/UseMobileTimeline" render={()=><UseMobileTimeline />}></Route>
+        <Route path="/UseMobileSelect" render={()=><UseMobileSelect />}></Route>
         
       </div>
     )

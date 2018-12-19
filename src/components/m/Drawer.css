@@ -1,0 +1,109 @@
+.xkcpn-drawer .drawer-background {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  animation-name: fadein;
+  animation-duration: 0.3s;
+}
+.xkcpn-drawer .drawer-body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 8px #666;
+  overflow: auto;
+  animation-duration: 0.3s;
+}
+.xkcpn-drawer .drawer-body.direction-right {
+  animation-name: drawer-pull-right;
+  right: 0;
+  top: 0;
+}
+.xkcpn-drawer .drawer-body.direction-left {
+  animation-name: drawer-pull-left;
+  left: 0;
+  top: 0;
+}
+.xkcpn-drawer .drawer-body.direction-top {
+  animation-name: drawer-pull-top;
+  top: 0;
+  left: 0;
+}
+.xkcpn-drawer .drawer-body.direction-bottom {
+  animation-name: drawer-pull-bottom;
+  bottom: 0;
+  left: 0;
+}
+
+.xkcpn-drawer.hiding .drawer-background {
+  animation-name: fadeout;
+  animation-duration: 0.3s;
+  opacity: 0;
+}
+.xkcpn-drawer.hiding .drawer-body {
+  animation-duration: 0.3s;
+}
+.xkcpn-drawer.hiding .drawer-body.direction-right {
+  animation-name: drawer-shut-right;
+  right: -100%;
+}
+.xkcpn-drawer.hiding .drawer-body.direction-left {
+  animation-name: drawer-shut-left;
+  left: -100%;
+}
+.xkcpn-drawer.hiding .drawer-body.direction-top {
+  animation-name: drawer-shut-top;
+  top: -100%;
+}
+.xkcpn-drawer.hiding .drawer-body.direction-bottom {
+  animation-name: drawer-shut-bottom;
+  bottom: -100%;
+}
+.xkcpn-drawer.hidden {
+  display: none;
+}
+.xkcpn-drawer.full-screen .drawer-background,
+.xkcpn-drawer.full-screen .drawer-body {
+  position: fixed;
+  z-index: 700;
+}
+
+@keyframes drawer-pull-right {
+  from { right: -100%; }
+  to { right: 0; }
+}
+@keyframes drawer-shut-right {
+  from{ right: 0; }
+  to { right: -100%; }
+}
+
+@keyframes drawer-pull-left {
+  from { left: -100%; }
+  to { left: 0; }
+}
+@keyframes drawer-shut-left {
+  from{ left: 0; }
+  to { left: -100%; }
+}
+
+@keyframes drawer-pull-top {
+  from { top: -100%; }
+  to { top: 0; }
+}
+@keyframes drawer-shut-top {
+  from{ top: 0; }
+  to { top: -100%; }
+}
+
+@keyframes drawer-pull-bottom {
+  from { bottom: -100%; }
+  to { bottom: 0; }
+}
+@keyframes drawer-shut-bottom {
+  from{ bottom: 0; }
+  to { bottom: -100%; }
+}
