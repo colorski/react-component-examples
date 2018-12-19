@@ -1,5 +1,6 @@
 import './Select.css'
-import React, { Component, ReactDOM } from 'react'
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 import _ from 'underscore'
 import cns from 'classnames'
 import Flex from './Flex'
@@ -102,14 +103,14 @@ export default class Select extends Component{
       {
         optionTitleGroup && <Flex className="opt-title">
           {
-            optionTitleGroup.map(title =><Flex className="title-text">{title}</Flex>)
+            optionTitleGroup.map(title =><Flex className="title-text" key={title}>{title}</Flex>)
           }
         </Flex>
       }
       <Flex>
         {
           optionsGroup.map((list, i)=>{
-            return <Flex className="opt-col-wrapper">
+            return <Flex className="opt-col-wrapper" key={i}>
               <div className="opt-col">
                 {
                   this.renderOptionColumn(
@@ -222,14 +223,55 @@ export default class Select extends Component{
   }
 
   renderOptionColumn(index, optList, value, title){
-    const {onChange, onSelect, emptyTip, eeid, eearg} = this.props
+    const {onChange, onSelect, emptyTip, eeid} = this.props
     const {cascadeValues} = this.state
     if(!optList.length)
-      return <div>666</div>
+      return <div className="sel-item empty-tip">
+        {emptyTip}
+      </div>
       //$$(Flex, {className:'sel-item empty-tip'}, emptyTip)
-    return <div>
-      777
-    </div>
+    return <Scroll
+      className="opt-col-scroll"
+      rebuildMark={this.state.rebuildMark + optList.length}
+      onMounted={el => this.scrolls[index] = el}
+    >
+      {
+        optList.map(item => {
+          let checked = item.key === (cascadeValues[index] || value)
+          if(checked && !item.key)
+            checked = _.isUndefined(item.key) || _.isNull(item.key)
+          let optEeid = ''
+          if(eeid){
+            const eeidList = [eeid, title, item.eeid || (_.isString(item.text) ? item.text : item.key)]
+            optEeid = eeidList.filter(e=>!!e).join('-')
+            optEeid = 'sel-opt_' + optEeid
+          }
+          
+          return <Flex
+            className={cns('sel-item', checked && 'checked')}
+            onClick={()=>{
+              if(this.cascading){
+                const newcascadeValues = cascadeValues.slice(0, index).concat(item.key)
+                this.setState({
+                  cascadeValues: newcascadeValues
+                })
+                onSelect && onSelect(item.key, item, index, newcascadeValues)
+              }else{
+                const r = onChange(item.key, item)
+                r !== false && this.hide()
+              }
+            }}
+            eeid={optEeid}
+            key={optEeid}
+          >
+            {item.text}
+            {item.subText && <span className="sub-text">
+              {item.subText}
+            </span>}
+          </Flex>
+        })
+      }
+    </Scroll>
     // $$(Scroll, {
     //   className: 'opt-col-scroll',
     //   rebuildMark: this.state.rebuildMark + optList.length,

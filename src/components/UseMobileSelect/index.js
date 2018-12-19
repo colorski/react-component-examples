@@ -18,14 +18,14 @@ export default class extends Component {
     }
     return (
       <div className="m-wrapper">
-        {/* <Select
+        <Select
           options={_options}
           nullOption={false}
           emptyTip="无可用联系人"
           value={this.state.customerId}
           placeholder="选择联系人"
           onChange={(v)=>console.log(v)}
-        /> */}
+        />
       </div>
     )
   }
