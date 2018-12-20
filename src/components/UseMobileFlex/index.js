@@ -11,13 +11,13 @@ export default class extends Component {
           <FlexItem>child</FlexItem>
         </Flex>
         <Flex align="center">
-          position center
+          center
         </Flex>
         <Flex href="/" target="_blank">
           a href
         </Flex>
         <Flex to="/UseIcon">
-          Link to /UseIcon
+          Link
         </Flex>
       </Flex>
     )

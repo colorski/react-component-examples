@@ -10,12 +10,11 @@ export default class extends Component {
   }
   
   render () {
-    const _options =  {
-      1:'小学',
-      2:'初中',
-      3:'高中',
-      7:'幼儿园',
-    }
+    const _options = [
+      {key: 1, text: '小学'},
+      {key: 2, text: '初中'},
+      {key: 3, text: '高中'}
+    ]
     return (
       <div className="m-wrapper">
         <Select
