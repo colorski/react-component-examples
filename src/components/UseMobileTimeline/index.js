@@ -21,7 +21,7 @@ export default class extends Component {
     return (
       <div className="m-wrapper">
         {
-          _.map(data, (i)=><Timeline dateFormat={_dataFormat} time={i.addTime} title={i.tit} content={i.content} />)
+          _.map(data, (d, i)=><Timeline dateFormat={_dataFormat} time={d.addTime} title={d.tit} content={d.content} key={i} />)
         }
       </div>
     )
@@ -32,9 +32,10 @@ export default class extends Component {
 
 // <Timeline
 //   dateFormat={_dataFormat}  - 时间格式 默认：YY/MM/DD HH:mm:ss
-//   time={i.addTime} -  时间
-//   title={i.tit}    -  标题
-//   content={i.content}  -  内容
+//   time={d.addTime} -  时间
+//   title={d.tit}    -  标题
+//   content={d.content}  -  内容
+//   key={i}  -  循环时记得给key
 // />
 
 // //注意：
