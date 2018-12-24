@@ -71,6 +71,13 @@ export const list = {
       "title": "PopOver",
       "desc": "There are two types of popup; popOver use picture and popHover use Pseudo-classes.",
       "url": "/UsePopOver"
+    },
+    {
+      "id": 20007,
+      "type": 2,
+      "title": "UseCopy",
+      "desc": "There are two types of popup; popOver use picture and popHover use Pseudo-classes.",
+      "url": "/UseCopy"
     }
   ],
   "cellection": [

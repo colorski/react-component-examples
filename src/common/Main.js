@@ -14,6 +14,7 @@ import UseSelect from '../components/UseSelect'
 import UseModal from '../components/UseModal'
 import UsePager from '../components/UsePager'
 import UsePopOver from '../components/UsePopOver'
+import UseCopy from '../components/UseCopy'
 
 import UseMobileFlex from '../components/UseMobileFlex'
 import UseMobileTimeline from '../components/UseMobileTimeline'
@@ -39,6 +40,7 @@ export default class Main extends Component {
         <Route path="/UseModal" render={()=><UseModal />}></Route>
         <Route path="/UsePager" render={()=><UsePager />}></Route>
         <Route path="/UsePopOver" render={()=><UsePopOver />}></Route>
+        <Route path="/UseCopy" render={()=><UseCopy />}></Route>
 
         {/* mobile */}
         <Route path="/UseMobileFlex" render={()=><UseMobileFlex />}></Route>
