@@ -76,7 +76,7 @@ export const list = {
       "id": 20007,
       "type": 2,
       "title": "UseCopy",
-      "desc": "There are two types of popup; popOver use picture and popHover use Pseudo-classes.",
+      "desc": "Use the API document.execCommand('copy').",
       "url": "/UseCopy"
     }
   ],
