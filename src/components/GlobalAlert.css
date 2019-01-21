@@ -1,0 +1,46 @@
+.xkcpn-global-alert .modal-body {
+  border: solid 1px #999 !important;
+}
+.xkcpn-global-alert .alert-wrapper .alert-body {
+  background: #fff;
+  padding: 32px 16px;
+}
+.xkcpn-global-alert .alert-wrapper .alert-body .main-text {
+  line-height: 3em;
+}
+.xkcpn-global-alert .alert-wrapper .alert-body .main-text .theme-icon {
+  font-size: 2em;
+  margin-right:12px;
+}
+.xkcpn-global-alert .alert-wrapper .alert-body .main-text .text {
+  font-size: 14px;
+}
+.xkcpn-global-alert .alert-wrapper .alert-body .sub-text {
+  margin-top: 12px;
+}
+.xkcpn-global-alert .alert-wrapper .alert-body .sub-text .theme-icon{
+  font-size: 2em;
+  margin-right:12px;
+  color: rgba(255, 255, 255, 0);
+}
+.xkcpn-global-alert .alert-wrapper .alert-body .sub-text .text{
+  font-size: 12px;
+}
+.xkcpn-global-alert .alert-wrapper .alert-prompt input {
+  width: 100%;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+.xkcpn-global-alert .alert-wrapper .err-msg {
+  color: #f50;
+}
+.xkcpn-global-alert .alert-wrapper .alert-footer {
+  border-top: solid 1px #ddd;
+  background: #eee;
+  text-align: right;
+  padding: 12px 18px;
+}
+.xkcpn-global-alert .alert-wrapper .alert-footer button {
+  margin-left: 12px;
+}
+

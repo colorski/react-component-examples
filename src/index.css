@@ -73,3 +73,8 @@ table {
 	max-width: 680px;
 	margin: 0 auto;
 }
+
+.main-wrapper {
+  display: flex;
+  flex: 1;
+}

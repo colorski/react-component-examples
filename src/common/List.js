@@ -76,7 +76,7 @@ export default class List extends Component {
   }
 
   componentDidMount(){
-    this.props.onInit()
+    this.props.onInit();
   }
 
 }

@@ -40,40 +40,47 @@ export const list = {
     {
       "id": 20002,
       "type": 2,
+      "title": "Global messages",
+      "desc": "Some messages registered in window including 'alert'、'confirm'、'prompt'、'error'、'warn'、'success'.",
+      "url": "/UseGlobalMessager"
+    },
+    {
+      "id": 20003,
+      "type": 2,
       "title": "RadioGroup and FormItem",
       "desc": "A group of radios in label tags; the structure component of FormItem which was used in form element or others.",
       "url": "/UseRadioGroup"
     },
     {
-      "id": 20003,
+      "id": 20004,
       "type": 2,
       "title": "Select",
       "desc": "The original select is encapsulated in the form of components.",
       "url": "/UseSelect"
     },
     {
-      "id": 20004,
+      "id": 20005,
       "type": 2,
       "title": "Modal",
       "desc": "There are some status on the modal that can meet your bussiness needs. You can also use esc to close the modal.",
       "url": "/UseModal"
     },
     {
-      "id": 20005,
+      "id": 20006,
       "type": 2,
       "title": "Pager",
       "desc": "the Paper component which contains total and jump.",
       "url": "/UsePager"
     },
     {
-      "id": 20006,
+      "id": 20007,
       "type": 2,
       "title": "PopOver",
       "desc": "There are two types of popup; popOver use picture and popHover use Pseudo-classes.",
       "url": "/UsePopOver"
     },
     {
-      "id": 20007,
+      "id": 20008,
       "type": 2,
       "title": "UseCopy",
       "desc": "Use the API document.execCommand('copy').",

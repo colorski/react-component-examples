@@ -20,6 +20,8 @@ export default class extends Component {
           all = { 1 }
           onChange={e=>{this.setState({stageVal: e.target.value}); console.log(e.target.value)}}
         />
+        <hr />
+        
       </div>
     )
   }
