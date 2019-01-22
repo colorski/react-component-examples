@@ -102,12 +102,12 @@ export const list = {
       "desc": "The static layout for Timeline, you can circulate the Timeline component to get the full Timeline components.",
       "url": "/UseMobileTimeline"
     },
-    {
-      "id": 30003,
-      "type": 3,
-      "title": "Mobile Select",
-      "desc": "need to perfect.",
-      "url": "/UseMobileSelect"
-    }
+    // {
+    //   "id": 30003,
+    //   "type": 3,
+    //   "title": "Mobile Select",
+    //   "desc": "need to perfect.",
+    //   "url": "/UseMobileSelect"
+    // }
   ]
 }
