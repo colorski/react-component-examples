@@ -11,6 +11,8 @@ import SayHello from './components/SayHello'
 import SecondsTimer from './components/SecondsTimer'
 import TodoList from './components/TodoList'
 import UseCountdown from './components/UseCountdown'
+import UseToast from './components/UseToast'
+import UseModals from './components/UseModals'
 
 import UseIcon from './components/UseIcon'
 import UseGlobalMessager from './components/UseGlobalMessager'
@@ -63,6 +65,8 @@ class App extends Component {
               <Route path="/SecondsTimer" render={()=><SecondsTimer />}></Route>
               <Route path="/TodoList" render={()=><TodoList />}></Route>
               <Route path="/UseCountdown" render={()=><UseCountdown />}></Route>
+              <Route path="/UseToast" render={()=><UseToast />}></Route>
+              <Route path="/UseModals" render={()=><UseModals />}></Route>
 
               {/* production */}
               <Route path="/UseIcon" render={()=><UseIcon />}></Route>

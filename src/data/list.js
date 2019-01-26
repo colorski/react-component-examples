@@ -27,7 +27,21 @@ export const list = {
       "title": "TodoList",
       "desc": "Data transfer between parent components and child components. Using attributes or methods.",
       "url": "/TodoList"
-    }
+    },
+    {
+      "id": 10005,
+      "type": 1,
+      "title": "Toast",
+      "desc": "The use of Toast, just import the Toast component, you can use the method info、success、warning... and so on.",
+      "url": "/UseToast"
+    },
+    {
+      "id": 10006,
+      "type": 1,
+      "title": "Modals",
+      "desc": "The methods alert、confirm、prompt are coding in Modals component.",
+      "url": "/UseModals"
+    },
   ],
   "production": [
     {

@@ -6,16 +6,16 @@ export default class UseIcon extends Component {
   render () {
     return (
       <div className="icon-box">
-        <Icon type="send" />
+        <Icon type="notice" />
 
 <br />
-        <Icon type="warn-o" />
+        <Icon type="tag" />
 
 <br />
-        <Icon type="good" title="click me!" onClick={()=>alert('good! thank u!')} />
+        <Icon type="appreciate_light" title="click me!" onClick={()=>alert('good! thank u!')} />
 
 <br />
-        <Icon type="star" style={{color: '#f00'}} onClick={()=>{
+        <Icon type="favor_fill_light" style={{color: '#f00'}} onClick={()=>{
           window.MESSAGER.alert({
               content: `这里使用了全局的MESSAGER.alert方法`,
               onOk(){
