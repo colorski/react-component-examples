@@ -23,10 +23,23 @@ class Modal extends Component {
         this.setState({ showDialog: true })
     }
 
-    onClose(confirm, data) {
-        const { onOk, onCancel, removeDialog } = this.props
-        if (confirm && onOk) onOk(data)
-        else if (onCancel) onCancel()
+    // onClose(confirm, data) {
+    //     const { onOk, onCancel, removeDialog } = this.props
+    //     if (confirm && onOk) onOk(data)
+    //     else if (onCancel) onCancel()
+    //     setTimeout(removeDialog, this.transitionTime)
+    //     this.setState({ showDialog: false })
+    // }
+
+    onClose(confirm, prompt, data) {
+        const { onOk, onPromptOk, onCancel, removeDialog } = this.props
+        if (confirm && onOk) {
+            onOk()
+        }else if (prompt && onPromptOk) {
+            onPromptOk(data)
+        }else if (onCancel) {
+            onCancel()
+        }
         setTimeout(removeDialog, this.transitionTime)
         this.setState({ showDialog: false })
     }
@@ -63,8 +76,12 @@ class Modal extends Component {
                         {
                             this.renderDialogForType(type, {
                                 content,
-                                onOk(data) { onClose(true, data) },
-                                onCancel() { onClose(false) },
+                                //onOk(data) { onClose(true, data) },
+                                //onOk() { onClose(true) },
+                                //onCancel() { onClose(false) },
+                                onOk() { onClose(true,false) },
+                                onCancel() { onClose(false, false) },
+                                onPromptOk(data) { onClose(false, true, data) },
                                 okText,
                                 cancleText,
                             })

@@ -19,7 +19,7 @@ export default class extends Component {
           </span>
           <span onClick={()=>prompt({
                 content: _alertContent,
-                onOk(data) { console.log(`已修改为：${data}`) },
+                onPromptOk(data) { console.log(`已修改为：${data}`) },
                 onCancel() { console.log('用户已取消操作') }
             })} style={{cursor: 'pointer', marginRight:'20px'}}>prompt</span>
         </div>
