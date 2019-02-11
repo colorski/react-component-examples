@@ -63,7 +63,7 @@ export const registerMessagers = () => (dispatch) => {
       return dispatch(showAlert({
         content: text,
         subContent: subText,
-        icon: 'close-o',
+        icon: 'wrong',
         iconColor: '#d30'
       }))
     },
@@ -71,14 +71,14 @@ export const registerMessagers = () => (dispatch) => {
       return dispatch(showAlert({
         content: text,
         subContent: subText,
-        icon: 'warn',
+        icon: 'warning',
         iconColor: '#fd0'
       }))
     },
     success(text, wait=600, width="310px"){
       return dispatch(showAlert({
         content: text,
-        icon: 'complete',
+        icon: 'yuanxingxuanzhongfill',
         iconColor: '#0a0',
         wait,
         width

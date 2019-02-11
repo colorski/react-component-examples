@@ -5,7 +5,7 @@ export default class UseIcon extends Component {
   render () {
     return (
       <div className="icon-box">
-        <Icon type="info" onClick={()=>{
+        <Icon type="warning" onClick={()=>{
           window.MESSAGER.alert({
             content: '类似alert的弹出框',
             onOk: ()=>alert('window.MESSAGER.alert()')
@@ -14,7 +14,7 @@ export default class UseIcon extends Component {
 
 <br />
 <br />
-        <Icon type="info" onClick={()=>{
+        <Icon type="warning" onClick={()=>{
           window.MESSAGER.confirm({
             content: '类似confirm的弹出框',
             onOk: ()=>alert('window.MESSAGER.confirm()')
@@ -23,7 +23,7 @@ export default class UseIcon extends Component {
 
 <br />
 <br />
-        <Icon type="info" onClick={()=>{
+        <Icon type="warning" onClick={()=>{
           window.MESSAGER.prompt({
             content: <div>
               <h2>修改备注</h2>
@@ -40,19 +40,19 @@ export default class UseIcon extends Component {
 
 <br />
 <br />
-        <Icon type="info" onClick={()=>{
+        <Icon type="warning" onClick={()=>{
           window.MESSAGER.error('你错了！ - window.MESSAGER.error("你错了！")')
         }} /> error
 
 <br />
 <br />
-        <Icon type="info" onClick={()=>{
+        <Icon type="warning" onClick={()=>{
           window.MESSAGER.warn('警告！','window.MESSAGER.error("警告！","balabala")')
         }} /> warn
 
 <br />
 <br />
-        <Icon type="info" onClick={()=>{
+        <Icon type="warning" onClick={()=>{
           window.MESSAGER.success('window.MESSAGER.success("成功！",2000, "600px")',2000, "600px")
         }} /> success
 
